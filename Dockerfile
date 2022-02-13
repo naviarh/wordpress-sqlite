@@ -1,5 +1,5 @@
 #FROM wordpress:fpm
-FROM wordpress:fpm-alpine
+FROM wordpress:php8.1-fpm-alpine
 
 # Pm ondemand to save RAM
 RUN sed -i 's/pm = dynamic/pm = ondemand/g' /usr/local/etc/php-fpm.d/www.conf
